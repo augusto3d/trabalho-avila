@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tarefas Domésticas</title>
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <header>
+    <h1>Tarefas Domésticas</h1>
+    <p>Organize suas tarefas e ganhe recompensas!</p>
+  </header>
+
+  <main>
+    <section class="tasks">
+      <h2>Recompensas Disponiveis</h2>
+      <ul>
+        <li>
+          <span>Mexer no celular</span>
+          <span class="points">-10 pontos</span>
+          <button class="task-button" data-task="Mexer no celular" data-points="-10">Adicionar Tarefa</button>
+        </li>
+        <li>
+          <span>10 Reias</span>
+          <span class="points">-25 pontos</span>
+          <button class="task-button" data-task="10 Reias" data-points="-25">Adicionar Tarefa</button>
+        </li>
+        <li>
+          <span>Usar o Cartao</span>
+          <span class="points">-200 pontos</span>
+          <button class="task-button" data-task="Usar o Cartao" data-points="-200">Adicionar Tarefa</button>
+        </li>
+      </ul>
+    </section>
+
+    <section class="completed-tasks">
+      <h2>Recompensas Resgatadas</h2>
+      <ul id="completed-list">
+        <!-- Tarefas concluídas aparecerão aqui -->
+      </ul>
+      <p><strong>Pontos Totais:</strong> <span id="total-points">0</span></p>
+    </section>
+
+    <section class="rewards">
+      <h2>Tarefas Disponíveis</h2>
+      <ul id="rewards-list">
+        <li>
+          <span>Lavar a Louça</span>
+          <span class="cost">+30 pontos</span>
+          <button class="reward-button" data-reward="Lavar a Louça" data-points="30">Adicionar</button>
+        </li>
+        <li>
+          <span>Lavar o Banheiro</span>
+          <span class="cost">+50 pontos</span>
+          <button class="reward-button" data-reward="Lavar o Banheiro" data-points="50">Adicionar</button>
+        </li>
+        <li>
+          <span>Varrer a Casa</span>
+          <span class="cost">+20 pontos</span>
+          <button class="reward-button" data-reward="Varrer a Casa" data-points="20">Adicionar</button>
+        </li>
+      </ul>
+    </section>
+
+    <section class="earned-rewards">
+      <h2>Tarefas Feitas</h2>
+      <ul id="earned-rewards-list">
+        <!-- Recompensas adicionadas aparecerão aqui -->
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Tarefas Domésticas. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="/javascript/script.js"></script>
+</body>
+</html>
